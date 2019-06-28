@@ -9,12 +9,13 @@ export class CartComponent implements OnInit {
   items = []
   constructor() { }
   index = 0
+  lStorage = []
   ngOnInit() {
-    this.items.push({ id: 1, name: "Espoir Analog Blue Dial Men's Watch - ESP12457", price: "10000", quantity: 2 })
-    this.items.push({ id: 2, name: "Espoir Analog Blue Dial Men's Watch - ESP12457", price: "10000", quantity: 2 })
-    this.items.push({ id: 3, name: "Espoir Analog Blue Dial Men's Watch - ESP12457", price: "10000", quantity: 2 })
-    this.items.push({ id: 4, name: "Espoir Analog Blue Dial Men's Watch - ESP12457", price: "10000", quantity: 2 })
-    console.log(this.items)
+    this.lStorage = JSON.parse(localStorage.getItem("cart")) ? JSON.parse(localStorage.getItem("cart")) : []
+    this.lStorage.map(item=>{
+      this.items.push({id:item.id,name:item.name,price:item.price,quantity:1,image:item.image})
+    })
+   console.log(this.items)
   }
   subtract(id) {
     console.log(id)
