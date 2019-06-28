@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
     this.lStorage.map(item=>{
       this.items.push({id:item.id,name:item.name,price:item.price,quantity:1,image:item.image})
     })
+    localStorage.setItem("cart",JSON.stringify(this.items))
    console.log(this.items)
   }
   subtract(id) {
@@ -29,6 +30,7 @@ export class CartComponent implements OnInit {
       }
 
     })
+    localStorage.setItem("cart",JSON.stringify(this.items))
   }
   deleteItem(id) {
     this.index = 0
@@ -38,14 +40,15 @@ export class CartComponent implements OnInit {
       } else {
         this.index += 1
       }
-
-    })}
+    })
+    localStorage.setItem("cart",JSON.stringify(this.items))}
   add(id) {
     this.items.map(item=>{
       if(item.id==id){
         item.quantity +=1
       }
     })
+    localStorage.setItem("cart",JSON.stringify(this.items))
   }
 
 }

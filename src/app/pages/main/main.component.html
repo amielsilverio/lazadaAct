@@ -1,0 +1,27 @@
+
+<div class="container-fluid header">
+ 
+    <div class="row">
+        <div class="col-1"> </div>
+        <div class="col-5"> <h2 class="logo">Laza-Pee</h2></div>
+        <div class="col-6"><a style="color:black;" [routerLink]="'/cart'"><i class="fa fa-shopping-cart" style="font-size:30px;">
+        </i>&nbsp;&nbsp;<b><span style="font-size:30px;">{{ cart }}</span></b></a></div>
+    </div>
+  </div>
+  <br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 myProducts" *ngFor="let prod of products">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" width="180" height="286" src="{{ prod.image }}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ prod.name }}</h5>
+                <p class="card-text">PHP {{ prod.price }}</p>
+                <a href="#" class="btn btn-primary" (click)="addToCart(prod)">Add To Cart</a>
+              </div>
+            </div>
+          
+      </div>
+    </div>
+  </div>
+  

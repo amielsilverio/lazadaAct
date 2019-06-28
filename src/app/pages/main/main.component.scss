@@ -1,0 +1,20 @@
+.myProducts{
+    margin: 15px;
+}
+
+.logo{
+    color: rgb(252, 232, 225);
+    margin: 10px 0px 10px 45px;
+}
+
+.header{
+    background: #f53d2d;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f53d2d),to(#f63));
+    background: linear-gradient(-180deg,#f53d2d,#f63);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);
+    transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+    transition: transform .2s cubic-bezier(.4,0,.2,1),-webkit-transform .2s cubic-bezier(.4,0,.2,1);
+    position: fixed;
+    z-index: 9999;
+}

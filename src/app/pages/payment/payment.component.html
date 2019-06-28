@@ -1,0 +1,50 @@
+<div class = "container">
+        <h2>Payment</h2>
+        <!-- <div class = "row"> -->
+            <div class = "row" *ngFor="let item of purchases">
+                <div class = "col-sm-4 text-center">
+                    <img class = "product-image" src="{{item.image}}" alt="image">
+                </div>
+                <div class = "col-sm-8">
+                    <h3>{{item.name}}</h3>
+                    <h3>{{item.price}}</h3>
+                    
+                    <h3>x{{item.quantity}}</h3>
+                </div>
+            </div>
+    
+        <!-- </div> -->
+        <div class = "button-container text-center">
+            <button (click) = "popOutModal()">Confirm Payment</button>
+        </div>
+    
+    
+        <div id="myModal" class="myModal {{openModal ? 'open' : 'hide'}}">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="text-right">
+                    <span class="close" (click)="closeModal()">&times;</span>
+                </div>
+                <!-- <header>Transfer Confirmation</header> -->
+                <p> Please fillup the details below.</p>
+                <form class = "fillupForm">
+                        <label>Name</label>
+                        <input type = "text" placeholder = "">
+                        <label>Address</label>
+                        <input type = "text" placeholder=""
+                        formControlName = "account">
+                        <label>Total Amount</label>
+                        <input placeholder="{{totalPrice}}"
+                        formControlName = "amount" disabled>
+                        <button (click) = "popOutModal()">Buy</button>
+                      </form>
+            </div>
+              
+        </div>
+            
+        
+    </div>
+    
+    
+    

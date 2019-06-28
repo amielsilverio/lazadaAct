@@ -1,3 +1,4 @@
+<router-outlet></router-outlet>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div style="height:675px;width:700px;margin-left:250px">
@@ -44,5 +45,5 @@
       </div>
     </div>
   </div>
-  <div class="row"><button style="margin-top:20px;margin-left:675px;" class="btn btn-primary">Checkout</button></div>
+  <div class="row"><a [routerLink]="'/payment'" style="margin-top:20px;margin-left:675px;" class="btn btn-primary" >Checkout</a></div>
 </div>

@@ -8,6 +8,8 @@ import { ProductComponent } from './pages/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientService } from './services/http-client.service';
 import { CartComponent } from './pages/cart/cart.component';
+import { MainComponent } from './pages/main/main.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 
 
 @NgModule({
@@ -16,7 +18,11 @@ import { CartComponent } from './pages/cart/cart.component';
 
     ProductComponent,
 
-    CartComponent
+    CartComponent,
+
+    MainComponent,
+
+    PaymentComponent
 
   ],
   imports: [
