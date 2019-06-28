@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Android",
+        "image": "../../assets/android.jpg",
+        "price": "150"
+    },
+    {
+        "id": 2,
+         "name": "Brief",
+         "image": "../../assets/brief.jpg",
+         "price": 120
+    },
+    {
+        "id": 3,
+         "name": "Cap",
+         "image": "../../assets/cap.jpg",
+         "price": 150
+    },
+    {
+        "id": 4,
+         "name": "robust",
+         "image": "../../assets/robust.jpg",
+         "price": 180
+    },
+    {
+        "id": 5,
+         "name": "iPhone X",
+         "image": "../../assets/iphoneX.jpg",
+         "price": 5000
+    },
+    {
+        "id": 6,
+         "name": "Gown",
+         "image": "../../assets/gown.jpg",
+         "price": 120
+    },
+    {
+        "id": 7,
+         "name": "Shirt",
+         "image": "../../assets/shirt.jpg",
+         "price": 550
+    },
+    {
+        "id": 8,
+         "name": "Shoes",
+         "image": "../../assets/shoes.jpeg",
+         "price": 1200
+    }
+]
